@@ -1,87 +1,54 @@
 {
   "title": "Fleur vs the Seagull",
-  "slug": "fleur-vs-seagull",
-  "status": "pre-production",
-  "duration": "~60s",
-  "format": "9:16 (Shorts/TikTok/Reels)",
-  "resolution": "720P",
-  "style": "UGC comedy, no dialogue, ambient sound only",
-  "characters": [
-    {
-      "name": "Fleur Linthorst",
-      "role": "main",
-      "ref": "https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/personas/07_golf_girl.png"
-    },
-    {
-      "name": "Floris Kramer",
-      "role": "cameo (end)",
-      "ref": "https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/personas/08_golf_guy.png"
-    }
-  ],
-  "scenes": [
-    {
-      "id": 1,
+  "status": "phase-1-keyframes",
+  "scenes": {
+    "scene-01": {
       "name": "The Broodje",
-      "duration": "7s",
-      "description": "Fleur sitting at a sunny Dutch terrace, eating a broodje Hema worst. Visor on, relaxed, summer day. She takes a bite, happy.",
-      "candidates": [],
-      "selected": null
+      "description": "Fleur at a sunny Dutch terrace eating a broodje Hema worst. Pink polo, white visor, golf glove.",
+      "candidates": 3,
+      "approved": "scene-01.jpg",
+      "approved_candidate": "#3 (close-up selfie angle)",
+      "reason": "#1 had two sandwiches, #3 was best framing",
+      "status": "approved"
     },
-    {
-      "id": 2,
+    "scene-02": {
       "name": "The Snatch",
-      "duration": "6s",
-      "description": "A seagull swoops in and snatches the broodje Hema worst from her hands. Extreme VFX close-up of the seagull's face mid-grab \u2014 menacing, almost laughing.",
-      "candidates": [],
-      "selected": null
+      "description": "Extreme close-up of seagull mid-dive, beak open, menacing.",
+      "candidates": 2,
+      "approved": null,
+      "approved_candidate": null,
+      "reason": null,
+      "status": "awaiting-approval"
     },
-    {
-      "id": 3,
+    "scene-03": {
       "name": "Second Try",
-      "duration": "7s",
-      "description": "Fleur has a new broodje. Takes one bite. ANOTHER seagull takes it. She stares in disbelief, mouth open mid-bite, mustard on her lip.",
-      "candidates": [],
-      "selected": null
+      "status": "not-started",
+      "approved": null
     },
-    {
-      "id": 4,
+    "scene-04": {
       "name": "The Trap",
-      "duration": "8s",
-      "description": "She builds a decoy broodje trap using a napkin and her sunglasses case. Places it carefully. Seagull takes the whole trap and flies off. Fleur slams the table.",
-      "candidates": [],
-      "selected": null
+      "status": "not-started",
+      "approved": null
     },
-    {
-      "id": 5,
+    "scene-05": {
       "name": "Golf Club Warfare",
-      "duration": "8s",
-      "description": "Fleur grabs her golf club from her bag. Starts swinging at swooping seagulls like she's at the driving range. Slow-mo golf swing at a diving seagull. Epic sports-style shot.",
-      "candidates": [],
-      "selected": null
+      "status": "not-started",
+      "approved": null
     },
-    {
-      "id": 6,
+    "scene-06": {
       "name": "The Army",
-      "duration": "7s",
-      "description": "VFX moment: an ARMY of seagulls appears on the rooftop. Dozens. All staring at her. Hitchcock-style. Dramatic zoom on Fleur's face \u2014 she knows she's outnumbered.",
-      "candidates": [],
-      "selected": null
+      "status": "not-started",
+      "approved": null
     },
-    {
-      "id": 7,
+    "scene-07": {
       "name": "The Retreat",
-      "duration": "7s",
-      "description": "She runs inside the cafe, slams the glass door shut. Seagulls swarm the terrace outside. Chaos. Feathers everywhere. She watches from inside, breathing heavy.",
-      "candidates": [],
-      "selected": null
+      "status": "not-started",
+      "approved": null
     },
-    {
-      "id": 8,
+    "scene-08": {
       "name": "The Punchline",
-      "duration": "10s",
-      "description": "Fleur sitting inside the cafe, menus taped over the windows. Eating her broodje Hema worst in peace. A single feather floats down from the ceiling vent. Pan to the terrace: Floris sitting outside completely unbothered, eating his broodje, seagulls ignoring him entirely.",
-      "candidates": [],
-      "selected": null
+      "status": "not-started",
+      "approved": null
     }
-  ]
+  }
 }

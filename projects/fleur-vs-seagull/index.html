@@ -20,112 +20,142 @@
   .char small{color:rgba(255,255,255,.4)}
   .scenes{max-width:1000px;margin:0 auto}
   .scene{background:#111;border:1px solid #1a1a1a;border-radius:12px;padding:24px;margin-bottom:20px}
-  .scene-header{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+  .scene-header{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
   .scene-num{background:rgba(255,255,255,.08);padding:4px 10px;border-radius:6px;font-size:.75rem;color:rgba(255,255,255,.5);font-weight:600}
   .scene-header h3{flex:1;font-size:1.1rem;font-weight:500}
   .scene-dur{color:rgba(255,255,255,.3);font-size:.8rem}
   .scene-desc{color:rgba(255,255,255,.6);font-size:.9rem;line-height:1.5;margin-bottom:16px}
-  .candidates{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
-  .candidates img{width:100%;border-radius:8px;cursor:pointer;transition:all .15s;border:3px solid transparent;aspect-ratio:9/16;object-fit:cover}
-  .candidates img:hover{border-color:rgba(255,255,255,.3);transform:scale(1.02)}
-  .empty-slot{background:#0d0d15;border:2px dashed #222;border-radius:8px;padding:40px 20px;text-align:center;color:rgba(255,255,255,.2);font-size:.85rem;grid-column:1/-1}
+  .candidates{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+  .candidate{position:relative}
+  .candidate img{width:100%;border-radius:8px;cursor:pointer;border:3px solid transparent;aspect-ratio:9/16;object-fit:cover;transition:all .15s}
+  .candidate img:hover{border-color:rgba(255,255,255,.3);transform:scale(1.02)}
+  .cand-label{position:absolute;top:8px;left:8px;background:rgba(0,0,0,.7);padding:2px 8px;border-radius:4px;font-size:.75rem;z-index:1}
+  .approved-section{max-width:250px}
+  .approved-label{font-size:.8rem;color:rgba(52,211,153,.8);margin-bottom:8px}
+  .approved-img{width:100%;border-radius:8px;cursor:pointer;border:3px solid rgba(52,211,153,.4);aspect-ratio:9/16;object-fit:cover}
+  .empty-slot{background:#0d0d15;border:2px dashed #222;border-radius:8px;padding:40px 20px;text-align:center;color:rgba(255,255,255,.2);font-size:.85rem}
   .lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.95);z-index:100;justify-content:center;align-items:center;cursor:pointer}
   .lightbox.active{display:flex}
   .lightbox img{max-width:90vw;max-height:90vh;border-radius:4px}
   .nav{max-width:1000px;margin:0 auto 20px}
   .nav a{color:rgba(255,255,255,.4);text-decoration:none;font-size:.85rem;padding:6px 14px;border-radius:6px;background:#151520}
   .nav a:hover{color:#fff;background:#1a1a2a}
+  .progress{max-width:1000px;margin:0 auto 24px;display:flex;gap:4px}
+  .progress-dot{flex:1;height:6px;border-radius:3px}
+  .progress-dot.done{background:#4ade80}
+  .progress-dot.active{background:#facc15}
+  .progress-dot.pending{background:#222}
 </style>
 </head>
 <body>
 <div class="nav"><a href="../../index.html">&larr; All Projects</a></div>
 <div class="header">
   <h1>Fleur vs the Seagull</h1>
-  <div class="sub">Tim Lee TV — Seedance 2.0 Production</div>
+  <div class="sub">Tim Lee TV — Phase 1: Keyframe Images (1/8 approved)</div>
   <div class="meta">
-    <div class="meta-item"><strong>Status:</strong> pre-production</div>
     <div class="meta-item"><strong>Duration:</strong> ~60s</div>
     <div class="meta-item"><strong>Format:</strong> 9:16 Shorts</div>
     <div class="meta-item"><strong>Style:</strong> UGC comedy, no dialogue</div>
   </div>
   <div class="chars">
-    <div class="char"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/personas/07_golf_girl.png" alt="Fleur"><span>Fleur Linthorst<br><small>main character</small></span></div>
-    <div class="char"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/personas/08_golf_guy.png" alt="Floris"><span>Floris Kramer<br><small>cameo (end)</small></span></div>
-    <div class="char"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/instagram/timleetv/01.jpg" alt="Tim"><span>Tim Lee<br><small>cameo (end)</small></span></div>
+    <div class="char"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/personas/07_golf_girl.png"><span>Fleur Linthorst<br><small>main</small></span></div>
+    <div class="char"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/personas/08_golf_guy.png"><span>Floris Kramer<br><small>cameo</small></span></div>
+    <div class="char"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/instagram/timleetv/01.jpg"><span>Tim Lee<br><small>cameo</small></span></div>
   </div>
 </div>
+<div class="progress">
+  <div class="progress-dot done"></div>
+  <div class="progress-dot active"></div>
+  <div class="progress-dot pending"></div>
+  <div class="progress-dot pending"></div>
+  <div class="progress-dot pending"></div>
+  <div class="progress-dot pending"></div>
+  <div class="progress-dot pending"></div>
+  <div class="progress-dot pending"></div>
+</div>
 <div class="scenes">
-    <div class="scene" id="scene-01">
+    <div class="scene">
       <div class="scene-header">
         <span class="scene-num">Scene 01</span>
         <h3>The Broodje</h3>
+        <span style="background:rgba(34,197,94,.15);color:#4ade80;padding:4px 10px;border-radius:6px;font-size:.75rem">APPROVED</span>
         <span class="scene-dur">7s</span>
       </div>
-      <p class="scene-desc">Fleur on a sunny Dutch terrace eating a broodje Hema worst. Happy, relaxed.</p>
-      <div class="candidates"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-01/01.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-01/02.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-01/03.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"></div>
+      <p class="scene-desc">Fleur at a sunny Dutch terrace eating a broodje Hema worst. Pink polo, white visor, golf glove.</p>
+      <div class="approved-section">
+            <div class="approved-label">Approved: #3 — #1 had two sandwiches, #3 best framing</div>
+            <img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/approved/scene-01.jpg" class="approved-img" onclick="openLb(this.src)">
+        </div>
     </div>
-    <div class="scene" id="scene-02">
+    <div class="scene">
       <div class="scene-header">
         <span class="scene-num">Scene 02</span>
         <h3>The Snatch</h3>
+        <span style="background:rgba(234,179,8,.15);color:#facc15;padding:4px 10px;border-radius:6px;font-size:.75rem">PICK ONE</span>
         <span class="scene-dur">6s</span>
       </div>
-      <p class="scene-desc">Seagull swoops in, snatches the broodje. Extreme VFX close-up of seagull mid-grab.</p>
-      <div class="candidates"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-02/01.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-02/02.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"></div>
+      <p class="scene-desc">Extreme close-up of seagull mid-dive, beak open, menacing. Warm terrace tones at bottom.</p>
+      <div class="candidates"><div class="candidate"><div class="cand-label">#1</div><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/v2-scene-02/01.jpg" onclick="openLb(this.src)"></div><div class="candidate"><div class="cand-label">#2</div><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/v2-scene-02/02.jpg" onclick="openLb(this.src)"></div></div>
     </div>
-    <div class="scene" id="scene-03">
+    <div class="scene">
       <div class="scene-header">
         <span class="scene-num">Scene 03</span>
         <h3>Second Try</h3>
+        <span style="background:rgba(255,255,255,.05);color:rgba(255,255,255,.3);padding:4px 10px;border-radius:6px;font-size:.75rem">NOT STARTED</span>
         <span class="scene-dur">7s</span>
       </div>
-      <p class="scene-desc">She gets a new one. Takes one bite. Another seagull takes it. Disbelief.</p>
-      <div class="candidates"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-03/01.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-03/02.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"></div>
+      <p class="scene-desc">Fleur staring in disbelief, empty hands, seagull flying away.</p>
+      <div class="empty-slot">Waiting for previous scene approval</div>
     </div>
-    <div class="scene" id="scene-04">
+    <div class="scene">
       <div class="scene-header">
         <span class="scene-num">Scene 04</span>
         <h3>The Trap</h3>
+        <span style="background:rgba(255,255,255,.05);color:rgba(255,255,255,.3);padding:4px 10px;border-radius:6px;font-size:.75rem">NOT STARTED</span>
         <span class="scene-dur">8s</span>
       </div>
-      <p class="scene-desc">She builds a decoy trap. Seagull takes the whole thing. She slams the table.</p>
-      <div class="candidates"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-04/01.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-04/02.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-04/03.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"></div>
+      <p class="scene-desc">Fleur building a decoy trap on the table. Seagull takes it all.</p>
+      <div class="empty-slot">Waiting for previous scene approval</div>
     </div>
-    <div class="scene" id="scene-05">
+    <div class="scene">
       <div class="scene-header">
         <span class="scene-num">Scene 05</span>
         <h3>Golf Club Warfare</h3>
+        <span style="background:rgba(255,255,255,.05);color:rgba(255,255,255,.3);padding:4px 10px;border-radius:6px;font-size:.75rem">NOT STARTED</span>
         <span class="scene-dur">8s</span>
       </div>
-      <p class="scene-desc">Grabs her golf club. Swings at swooping seagulls. Slow-mo driving range style.</p>
-      <div class="candidates"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-05/01.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-05/02.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-05/03.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"></div>
+      <p class="scene-desc">Fleur swinging golf club at swooping seagulls. Battle stance.</p>
+      <div class="empty-slot">Waiting for previous scene approval</div>
     </div>
-    <div class="scene" id="scene-06">
+    <div class="scene">
       <div class="scene-header">
         <span class="scene-num">Scene 06</span>
         <h3>The Army</h3>
+        <span style="background:rgba(255,255,255,.05);color:rgba(255,255,255,.3);padding:4px 10px;border-radius:6px;font-size:.75rem">NOT STARTED</span>
         <span class="scene-dur">7s</span>
       </div>
-      <p class="scene-desc">Army of seagulls on the rooftop. Hitchcock-style. Fleur realizes she is outnumbered.</p>
-      <div class="candidates"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-06/01.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-06/02.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-06/03.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"></div>
+      <p class="scene-desc">Army of seagulls on the rooftop. Hitchcock-style. Fleur outnumbered.</p>
+      <div class="empty-slot">Waiting for previous scene approval</div>
     </div>
-    <div class="scene" id="scene-07">
+    <div class="scene">
       <div class="scene-header">
         <span class="scene-num">Scene 07</span>
         <h3>The Retreat</h3>
+        <span style="background:rgba(255,255,255,.05);color:rgba(255,255,255,.3);padding:4px 10px;border-radius:6px;font-size:.75rem">NOT STARTED</span>
         <span class="scene-dur">7s</span>
       </div>
-      <p class="scene-desc">Runs inside, slams the door. Seagulls swarm the terrace. Feathers everywhere.</p>
-      <div class="candidates"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-07/01.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-07/02.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-07/03.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"></div>
+      <p class="scene-desc">Fleur pressed against glass door inside. Seagulls swarming outside.</p>
+      <div class="empty-slot">Waiting for previous scene approval</div>
     </div>
-    <div class="scene" id="scene-08">
+    <div class="scene">
       <div class="scene-header">
         <span class="scene-num">Scene 08</span>
         <h3>The Punchline</h3>
+        <span style="background:rgba(255,255,255,.05);color:rgba(255,255,255,.3);padding:4px 10px;border-radius:6px;font-size:.75rem">NOT STARTED</span>
         <span class="scene-dur">10s</span>
       </div>
-      <p class="scene-desc">Fleur inside eating in peace. Feather from ceiling. Floris and Tim outside, unbothered.</p>
-      <div class="candidates"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-08/01.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"><img src="https://raw.githubusercontent.com/StudioLee-cmd/seedance-studio/main/projects/fleur-vs-seagull/scene-08/02.jpg" loading="lazy" onclick="openLb(this.src)" onerror="this.style.display='none'"></div>
+      <p class="scene-desc">Fleur inside eating in peace. Feather from ceiling. Floris + Tim outside unbothered.</p>
+      <div class="empty-slot">Waiting for previous scene approval</div>
     </div></div>
 <div class="lightbox" id="lb" onclick="this.classList.remove('active')"><img id="lbi" src=""></div>
 <script>
