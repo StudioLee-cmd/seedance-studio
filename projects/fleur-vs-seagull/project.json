@@ -110,30 +110,31 @@
     }
   },
   "assets": {
-    "seagull_front": {
-      "status": "generated",
-      "path": "assets/seagull_front.jpg"
+    "props": {
+      "fries": {
+        "file": "assets/fries_front.jpg",
+        "use": "image_input for scenes with fries"
+      },
+      "ring": {
+        "file": "assets/ring_closeup.jpg",
+        "use": "image_input for scenes with ring"
+      },
+      "seagull": {
+        "file": "assets/seagull_front.jpg",
+        "use": "image_input for scenes with seagull"
+      },
+      "golf_balls": {
+        "file": "assets/golf_balls.jpg",
+        "use": "image_input for golf ball scenes"
+      }
     },
-    "seagull_side": {
-      "status": "generated",
-      "path": "assets/seagull_side.jpg"
+    "planning": {
+      "street_map": {
+        "file": "assets/street_map_v4.jpg",
+        "use": "Planning and video generation ONLY. Do NOT use as image_input for scene image generation \u2014 it pulls the style toward illustration."
+      }
     },
-    "seagull_wings": {
-      "status": "generated",
-      "path": "assets/seagull_wings.jpg"
-    },
-    "fries_front": {
-      "status": "generated",
-      "path": "assets/fries_front.jpg"
-    },
-    "ring_closeup": {
-      "status": "generated",
-      "path": "assets/ring_closeup.jpg"
-    },
-    "golf_balls": {
-      "status": "generated",
-      "path": "assets/golf_balls.jpg"
-    }
+    "note": "Props go into image_input for NB2 scene generation. Planning assets are for reference only \u2014 used later for Seedance video prompts."
   },
   "story": "Fleur is eating Dutch fries on a terrace. She deliberately takes off her ring to eat without getting it greasy. She turns to the cafe for a second to ask about the parasol. The seagull strikes \u2014 eats the fries and swallows the ring. When she comes back everything is gone. The seagull taunts her with the ring on its claw, giving the middle finger. She snaps, grabs golf balls, and starts a full warfare attack. She destroys the whole terrace but finally hits the seagull, ring pops out. She catches it triumphantly \u2014 but gets arrested for the destruction. She's happy in the police car with her ring back. Seagull flies away free.",
   "scenes": [
