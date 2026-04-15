@@ -1,0 +1,102 @@
+{
+  "title": "",
+  "slug": "",
+  "status": "creative-brief",
+  "duration": "",
+  "format": "9:16",
+  "style": "",
+  "method": "First frame + last frame per scene, Seedance fills the motion",
+  "audio_rule": "NO TALKING. Ambient sound only — wind, footsteps, crowd noise, clinking, laughter. No dialogue, no voiceover, no lip-sync.",
+
+  "creative_brief": {
+    "concept": "",
+    "punchline": "",
+    "tone": "",
+    "setting": "",
+    "key_detail": "",
+    "escalation": "",
+    "reference_videos": [],
+    "notes": ""
+  },
+
+  "characters": {
+    "main": {
+      "name": "",
+      "role": "main",
+      "ref": "",
+      "notes": ""
+    },
+    "supporting": [],
+    "background": {
+      "description": "Any of the 18 personas can be used as background characters",
+      "base_url": "https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/",
+      "available_in": "references/PERSONAS.md"
+    }
+  },
+
+  "assets": {
+    "_instructions": "One reference image per prop. These are for coherence, not perfection. The video model isn't stupid — it just needs to know what the prop looks like. Don't over-generate.",
+    "props": {}
+  },
+
+  "scenes": [
+    {
+      "id": 1,
+      "name": "",
+      "duration": "",
+      "description": "",
+      "first_frame": {
+        "prompt": "",
+        "image_input": [],
+        "status": "not-started",
+        "approved_image": null
+      },
+      "last_frame": {
+        "prompt": "",
+        "image_input": [],
+        "status": "not-started",
+        "approved_image": null
+      },
+      "video": {
+        "seedance_prompt": "",
+        "reference_image_urls": [],
+        "image_tail_url": "",
+        "reference_video_urls": [],
+        "status": "not-started",
+        "approved_video": null
+      }
+    }
+  ],
+
+  "workflow_checklist": {
+    "step_0_creative_brief": false,
+    "step_1_scene_plan_approved": false,
+    "step_2_assets_generated": false,
+    "step_3_assets_approved": false,
+    "step_4_all_first_frames_approved": false,
+    "step_5_all_last_frames_approved": false,
+    "step_6_storyboard_reviewed": false,
+    "step_7_all_videos_approved": false,
+    "step_8_assembly_plan_delivered": false
+  },
+
+  "rules": {
+    "1": "NEVER batch-generate. One frame at a time, sequential, wait for approval.",
+    "2": "NEVER skip the image step. Image first, then video. Two separate steps.",
+    "3": "NEVER generate without previous scene as reference for continuity.",
+    "4": "Image prompts = frozen moments. No motion verbs. No video action.",
+    "5": "Upload to GitHub IMMEDIATELY after generation. User reviews on GitHub Pages, not in chat.",
+    "6": "One image per generation unless user specifically asks for multiple candidates.",
+    "7": "Document every prompt and every approval in this file.",
+    "8": "Props need one reference image each. Don't over-generate angles."
+  },
+
+  "storage": {
+    "repo": "StudioLee-cmd/seedance-studio",
+    "project_path": "projects/{slug}/",
+    "assets_path": "projects/{slug}/assets/",
+    "scenes_path": "projects/{slug}/scene-{id}/",
+    "approved_path": "projects/{slug}/approved/",
+    "videos_path": "projects/{slug}/videos/"
+  }
+}
