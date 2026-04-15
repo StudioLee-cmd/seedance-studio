@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seedance Studio</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#0a0a0f;color:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;padding:40px;display:flex;flex-direction:column;align-items:center;min-height:100vh}
+  h1{font-size:2rem;margin-bottom:8px}
+  .sub{color:rgba(255,255,255,.4);margin-bottom:40px;font-size:.95rem}
+  .projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;max-width:1000px;width:100%}
+  .project{background:#111;border:1px solid #1a1a1a;border-radius:12px;padding:24px;transition:border-color .2s;cursor:pointer;text-decoration:none;color:#fff}
+  .project:hover{border-color:#333}
+  .project h2{font-size:1.1rem;margin-bottom:8px}
+  .project p{color:rgba(255,255,255,.5);font-size:.85rem;line-height:1.4;margin-bottom:12px}
+  .project .tags{display:flex;gap:6px;flex-wrap:wrap}
+  .project .tag{background:rgba(255,255,255,.06);padding:3px 10px;border-radius:12px;font-size:.7rem;color:rgba(255,255,255,.4)}
+  .project .tag.active{background:rgba(96,165,250,.15);color:#60a5fa}
+</style>
+</head>
+<body>
+<h1>Seedance Studio</h1>
+<p class="sub">Video production pipeline — pick images, build scenes, generate clips</p>
+<div class="projects">
+  <a class="project" href="projects/fleur-vs-seagull/index.html">
+    <h2>Fleur vs the Seagull</h2>
+    <p>Golf girl Fleur Linthorst tries to eat a broodje Hema worst on a Dutch terrace. The seagulls have other plans. 8 scenes, ~60s.</p>
+    <div class="tags">
+      <span class="tag active">pre-production</span>
+      <span class="tag">8 scenes</span>
+      <span class="tag">~60s</span>
+      <span class="tag">comedy</span>
+    </div>
+  </a>
+</div>
+</body>
+</html>

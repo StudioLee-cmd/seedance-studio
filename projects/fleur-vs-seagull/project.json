@@ -1,0 +1,87 @@
+{
+  "title": "Fleur vs the Seagull",
+  "slug": "fleur-vs-seagull",
+  "status": "pre-production",
+  "duration": "~60s",
+  "format": "9:16 (Shorts/TikTok/Reels)",
+  "resolution": "720P",
+  "style": "UGC comedy, no dialogue, ambient sound only",
+  "characters": [
+    {
+      "name": "Fleur Linthorst",
+      "role": "main",
+      "ref": "https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/personas/07_golf_girl.png"
+    },
+    {
+      "name": "Floris Kramer",
+      "role": "cameo (end)",
+      "ref": "https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/personas/08_golf_guy.png"
+    }
+  ],
+  "scenes": [
+    {
+      "id": 1,
+      "name": "The Broodje",
+      "duration": "7s",
+      "description": "Fleur sitting at a sunny Dutch terrace, eating a broodje Hema worst. Visor on, relaxed, summer day. She takes a bite, happy.",
+      "candidates": [],
+      "selected": null
+    },
+    {
+      "id": 2,
+      "name": "The Snatch",
+      "duration": "6s",
+      "description": "A seagull swoops in and snatches the broodje Hema worst from her hands. Extreme VFX close-up of the seagull's face mid-grab \u2014 menacing, almost laughing.",
+      "candidates": [],
+      "selected": null
+    },
+    {
+      "id": 3,
+      "name": "Second Try",
+      "duration": "7s",
+      "description": "Fleur has a new broodje. Takes one bite. ANOTHER seagull takes it. She stares in disbelief, mouth open mid-bite, mustard on her lip.",
+      "candidates": [],
+      "selected": null
+    },
+    {
+      "id": 4,
+      "name": "The Trap",
+      "duration": "8s",
+      "description": "She builds a decoy broodje trap using a napkin and her sunglasses case. Places it carefully. Seagull takes the whole trap and flies off. Fleur slams the table.",
+      "candidates": [],
+      "selected": null
+    },
+    {
+      "id": 5,
+      "name": "Golf Club Warfare",
+      "duration": "8s",
+      "description": "Fleur grabs her golf club from her bag. Starts swinging at swooping seagulls like she's at the driving range. Slow-mo golf swing at a diving seagull. Epic sports-style shot.",
+      "candidates": [],
+      "selected": null
+    },
+    {
+      "id": 6,
+      "name": "The Army",
+      "duration": "7s",
+      "description": "VFX moment: an ARMY of seagulls appears on the rooftop. Dozens. All staring at her. Hitchcock-style. Dramatic zoom on Fleur's face \u2014 she knows she's outnumbered.",
+      "candidates": [],
+      "selected": null
+    },
+    {
+      "id": 7,
+      "name": "The Retreat",
+      "duration": "7s",
+      "description": "She runs inside the cafe, slams the glass door shut. Seagulls swarm the terrace outside. Chaos. Feathers everywhere. She watches from inside, breathing heavy.",
+      "candidates": [],
+      "selected": null
+    },
+    {
+      "id": 8,
+      "name": "The Punchline",
+      "duration": "10s",
+      "description": "Fleur sitting inside the cafe, menus taped over the windows. Eating her broodje Hema worst in peace. A single feather floats down from the ceiling vent. Pan to the terrace: Floris sitting outside completely unbothered, eating his broodje, seagulls ignoring him entirely.",
+      "candidates": [],
+      "selected": null
+    }
+  ]
+}
