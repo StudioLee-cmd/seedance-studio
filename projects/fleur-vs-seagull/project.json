@@ -1,54 +1,194 @@
 {
   "title": "Fleur vs the Seagull",
-  "status": "phase-1-keyframes",
-  "scenes": {
-    "scene-01": {
-      "name": "The Broodje",
-      "description": "Fleur at a sunny Dutch terrace eating a broodje Hema worst. Pink polo, white visor, golf glove.",
-      "candidates": 3,
-      "approved": "scene-01.jpg",
-      "approved_candidate": "#3 (close-up selfie angle)",
-      "reason": "#1 had two sandwiches, #3 was best framing",
-      "status": "approved"
+  "status": "phase-1-assets",
+  "duration": "~63s (trim to 60 in editing)",
+  "format": "9:16 vertical (Shorts/TikTok/Reels)",
+  "style": "UGC comedy, no dialogue, ambient sound only",
+  "method": "First frame + last frame per scene, Seedance fills the motion",
+  "characters": {
+    "fleur": {
+      "name": "Fleur Linthorst",
+      "role": "main",
+      "ref": "https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/personas/07_golf_girl.png"
     },
-    "scene-02": {
-      "name": "The Snatch",
-      "description": "Extreme close-up of seagull mid-dive, beak open, menacing.",
-      "candidates": 2,
-      "approved": null,
-      "approved_candidate": null,
-      "reason": null,
-      "status": "awaiting-approval"
+    "floris": {
+      "name": "Floris Kramer",
+      "role": "cameo (end)",
+      "ref": "https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/personas/08_golf_guy.png"
     },
-    "scene-03": {
-      "name": "Second Try",
-      "status": "not-started",
-      "approved": null
+    "tim": {
+      "name": "Tim Lee",
+      "role": "cameo (end)",
+      "ref": "https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/instagram/timleetv/01.jpg"
     },
-    "scene-04": {
-      "name": "The Trap",
-      "status": "not-started",
-      "approved": null
+    "background": "Any of the 18 personas can be used as terrace background characters"
+  },
+  "assets": {
+    "seagull_front": {
+      "status": "generated",
+      "path": "assets/seagull_front.jpg"
     },
-    "scene-05": {
-      "name": "Golf Club Warfare",
-      "status": "not-started",
-      "approved": null
+    "seagull_side": {
+      "status": "generated",
+      "path": "assets/seagull_side.jpg"
     },
-    "scene-06": {
-      "name": "The Army",
-      "status": "not-started",
-      "approved": null
+    "seagull_wings": {
+      "status": "generated",
+      "path": "assets/seagull_wings.jpg"
     },
-    "scene-07": {
-      "name": "The Retreat",
-      "status": "not-started",
-      "approved": null
+    "fries_front": {
+      "status": "generated",
+      "path": "assets/fries_front.jpg"
     },
-    "scene-08": {
-      "name": "The Punchline",
-      "status": "not-started",
-      "approved": null
+    "fries_angle": {
+      "status": "generated",
+      "path": "assets/fries_angle.jpg"
+    },
+    "ring_closeup": {
+      "status": "generated",
+      "path": "assets/ring_closeup.jpg"
+    },
+    "golf_balls": {
+      "status": "generated",
+      "path": "assets/golf_balls.jpg"
     }
-  }
+  },
+  "story": "Fleur is eating Dutch fries on a terrace. She deliberately takes off her ring to eat without getting it greasy. She turns to the cafe for a second to ask about the parasol. The seagull strikes \u2014 eats the fries and swallows the ring. When she comes back everything is gone. The seagull taunts her with the ring on its claw, giving the middle finger. She snaps, grabs golf balls, and starts a full warfare attack. She destroys the whole terrace but finally hits the seagull, ring pops out. She catches it triumphantly \u2014 but gets arrested for the destruction. She's happy in the police car with her ring back. Seagull flies away free.",
+  "scenes": [
+    {
+      "id": 1,
+      "name": "The Fries",
+      "dur": "6s",
+      "desc": "Fleur eating fries at the terrace. Ring visible on table. Happy, relaxed.",
+      "first_frame": "Fleur mid-bite, fries in hand, ring on table beside plate, sunny Dutch terrace",
+      "last_frame": "She looks up annoyed at seagull shadow overhead, hand shielding her fries, ring still on table",
+      "status": "not-started"
+    },
+    {
+      "id": 2,
+      "name": "Gone for a Second",
+      "dur": "4s",
+      "desc": "She stands up to ask about the parasol. Leaves ring and fries on the table.",
+      "first_frame": "Fleur standing up from chair, turning toward cafe door, one hand gesturing inside. Fries and ring unattended on the table.",
+      "last_frame": "Empty table \u2014 no Fleur. Ring and fries sitting there. Seagull visible landing on table edge.",
+      "status": "not-started"
+    },
+    {
+      "id": 3,
+      "name": "The Heist",
+      "dur": "5s",
+      "desc": "Seagull on the table. Eats fries. Spots ring. Swallows it.",
+      "first_frame": "Seagull standing on table next to fries and ring. Head tilted, scheming look.",
+      "last_frame": "Fries scattered/gone, ring gone. Seagull throat bulging. Empty mayo-smeared cone on its side.",
+      "status": "not-started"
+    },
+    {
+      "id": 4,
+      "name": "The Discovery",
+      "dur": "5s",
+      "desc": "Fleur comes back. Fries gone. Then realizes ring is gone too \u2014 double take.",
+      "first_frame": "Fleur arriving back at table, mouth open, looking at the mess. Empty table.",
+      "last_frame": "Extreme close-up her face \u2014 eyes wide, hand on bare ring finger, pure horror.",
+      "status": "not-started"
+    },
+    {
+      "id": 5,
+      "name": "The Taunt",
+      "dur": "5s",
+      "desc": "Seagull shows the ring on its claw. Middle finger. Pure villain energy.",
+      "first_frame": "Seagull on table edge, one claw raised with ring on talon, middle finger, smug face.",
+      "last_frame": "Fleur's face \u2014 jaw dropped, fists clenched, rage building. Seagull blurred in foreground.",
+      "status": "not-started"
+    },
+    {
+      "id": 6,
+      "name": "The Arsenal",
+      "dur": "4s",
+      "desc": "Fleur reaches into golf bag. Game face. Pulls out club and golf balls.",
+      "first_frame": "Fleur reaching into golf bag with determined expression. Visor adjusted straight.",
+      "last_frame": "Battle stance on the terrace, club raised, golf balls lined up on table like ammo.",
+      "status": "not-started"
+    },
+    {
+      "id": 7,
+      "name": "First Shot",
+      "dur": "4s",
+      "desc": "First swing. Misses the seagull. Hits a flower pot.",
+      "first_frame": "Fleur in perfect driving stance, focused eyes on seagull, club pulled back.",
+      "last_frame": "Flower pot exploding next to seagull, dirt and ceramic flying. Seagull doesn't flinch.",
+      "status": "not-started"
+    },
+    {
+      "id": 8,
+      "name": "Close-up: Golf Ball",
+      "dur": "2s",
+      "desc": "Extreme close-up of a golf ball spinning through the air. Cinematic slow-mo feel.",
+      "first_frame": "Golf ball just leaving the club face, slight compression visible, motion blur starting.",
+      "last_frame": "Golf ball mid-air, spinning, with blurred terrace destruction in the background.",
+      "status": "not-started"
+    },
+    {
+      "id": 9,
+      "name": "Close-up: Fleur's Eyes",
+      "dur": "2s",
+      "desc": "Extreme close-up of Fleur's eyes. Locked on target. Determined.",
+      "first_frame": "Extreme close-up of Fleur's eyes, narrowed, tracking something above.",
+      "last_frame": "Same eyes but now with a slight determined squint, reflected terrace chaos in her pupils.",
+      "status": "not-started"
+    },
+    {
+      "id": 10,
+      "name": "Rapid Fire",
+      "dur": "5s",
+      "desc": "Full chaos. She's rage-throwing golf balls everywhere. Destruction mounting.",
+      "first_frame": "Fleur grabbing golf balls off table with both hands, rage mode, no careful aiming.",
+      "last_frame": "Wide shot of chaos \u2014 balls flying everywhere, cracked window, dented car, knocked over coffee, chairs overturned.",
+      "status": "not-started"
+    },
+    {
+      "id": 11,
+      "name": "Close-up: Damage",
+      "dur": "3s",
+      "desc": "Quick cuts of destruction. Car dent. Window crack. Coffee explosion.",
+      "first_frame": "Fresh dent in a car hood from a golf ball, ball still rolling off.",
+      "last_frame": "Someone's coffee cup exploding from a direct hit, brown liquid splashing.",
+      "status": "not-started"
+    },
+    {
+      "id": 12,
+      "name": "Close-up: Seagull Dodge",
+      "dur": "3s",
+      "desc": "Seagull casually dodges a golf ball. Doesn't even care. Still has the ring.",
+      "first_frame": "Golf ball flying toward the seagull at speed, seagull standing calmly.",
+      "last_frame": "Seagull having sidestepped casually, ball flying past. Smug untouched expression. Ring glinting on claw.",
+      "status": "not-started"
+    },
+    {
+      "id": 13,
+      "name": "The Last Shot",
+      "dur": "5s",
+      "desc": "One final shot. Fleur concentrating. Hits the seagull. Ring pops out.",
+      "first_frame": "Fleur one eye closed, tongue out in concentration, last golf ball, everything destroyed around her.",
+      "last_frame": "Direct hit \u2014 seagull mid-squawk, ring flying out of its beak, feathers puffing.",
+      "status": "not-started"
+    },
+    {
+      "id": 14,
+      "name": "The Catch",
+      "dur": "4s",
+      "desc": "Ring tumbling through air. Fleur catches it. Triumphant.",
+      "first_frame": "Gold ring tumbling through the air in slow motion, sunlight catching the diamond.",
+      "last_frame": "Ring on her finger, fist pump, huge grin, destroyed terrace all around her.",
+      "status": "not-started"
+    },
+    {
+      "id": 15,
+      "name": "The Arrest",
+      "dur": "6s",
+      "desc": "Police arrive. She's arrested. But she's happy. Seagull flies away free.",
+      "first_frame": "Blue police lights reflecting on Fleur's grinning face, officers approaching destroyed terrace.",
+      "last_frame": "Fleur in back of police car, handcuffed, ring pressed against window with proud smile. Seagull flying away free in sky above.",
+      "status": "not-started"
+    }
+  ]
 }
