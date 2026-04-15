@@ -21,7 +21,93 @@
       "role": "cameo (end)",
       "ref": "https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/instagram/timleetv/01.jpg"
     },
-    "background": "Any of the 18 personas can be used as terrace background characters"
+    "background": {
+      "description": "Any of the 18 personas can be used as terrace background characters",
+      "note": "Use in wider scenes (Scene 1, 10, 15) to make the terrace feel alive. Drop in 2-3 per scene.",
+      "available": [
+        {
+          "name": "Vera Wolters",
+          "niche": "Metal",
+          "ref": "personas/01_metal_girl.png"
+        },
+        {
+          "name": "Ruben Groen",
+          "niche": "Metal",
+          "ref": "personas/02_metal_guy.png"
+        },
+        {
+          "name": "Nola Ravenstein",
+          "niche": "Goth",
+          "ref": "personas/03_goth_girl.png"
+        },
+        {
+          "name": "Dorian Scholten",
+          "niche": "Goth",
+          "ref": "personas/04_goth_guy.png"
+        },
+        {
+          "name": "Fenne Driessen",
+          "niche": "Punk",
+          "ref": "personas/05_punk_girl.png"
+        },
+        {
+          "name": "Jip Overbeek",
+          "niche": "Punk",
+          "ref": "personas/06_punk_guy.png"
+        },
+        {
+          "name": "Yara Blom",
+          "niche": "Surfer",
+          "ref": "personas/09_surfer_girl.png"
+        },
+        {
+          "name": "Kai Lemmens",
+          "niche": "Surfer",
+          "ref": "personas/10_surfer_guy.png"
+        },
+        {
+          "name": "Demi van Kesteren",
+          "niche": "Streetwear",
+          "ref": "personas/11_streetwear_girl.png"
+        },
+        {
+          "name": "Dex ter Haar",
+          "niche": "Streetwear",
+          "ref": "personas/12_streetwear_guy.png"
+        },
+        {
+          "name": "Senna Luijten",
+          "niche": "Raver",
+          "ref": "personas/13_raver_girl.png"
+        },
+        {
+          "name": "Jurre Veldhuis",
+          "niche": "Raver",
+          "ref": "personas/14_raver_guy.png"
+        },
+        {
+          "name": "Maud van Leeuwen",
+          "niche": "Biker",
+          "ref": "personas/15_biker_girl.png"
+        },
+        {
+          "name": "Hidde Kuijpers",
+          "niche": "Biker",
+          "ref": "personas/16_biker_guy.png"
+        },
+        {
+          "name": "Bente Olthuis",
+          "niche": "Cottagecore",
+          "ref": "personas/17_cottagecore_girl.png"
+        },
+        {
+          "name": "Teun Konings",
+          "niche": "Cottagecore",
+          "ref": "personas/18_cottagecore_guy.png"
+        }
+      ],
+      "base_url": "https://raw.githubusercontent.com/StudioLee-cmd/seedance-content/main/"
+    }
   },
   "assets": {
     "seagull_front": {
