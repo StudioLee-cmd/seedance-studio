@@ -1,0 +1,21 @@
+{
+  "name": "STUDIOLEE Badge Assembly",
+  "description": "Animated logo \u2014 characters fly into badge, Cuphead rubber hose style",
+  "status": "in-progress",
+  "created": "2026-04-18",
+  "style": "1930s Fleischer Brothers rubber hose animation, Cuphead aesthetic",
+  "duration": "5s",
+  "resolution": "480p",
+  "aspect_ratio": "1:1",
+  "model": "bytedance/seedance-2",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "name": "Badge Assembly",
+      "first_frame": "assets/starting-frame.png",
+      "last_frame": "assets/ending-frame.webp",
+      "reference_sheet": "assets/character-reference-sheet.png",
+      "status": "pending"
+    }
+  ]
+}
