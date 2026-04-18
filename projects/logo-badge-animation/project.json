@@ -1,21 +1,174 @@
 {
-  "name": "STUDIOLEE Badge Assembly",
-  "description": "Animated logo \u2014 characters fly into badge, Cuphead rubber hose style",
-  "status": "in-progress",
-  "created": "2026-04-18",
-  "style": "1930s Fleischer Brothers rubber hose animation, Cuphead aesthetic",
+  "title": "STUDIOLEE Badge Assembly",
+  "slug": "logo-badge-animation",
+  "status": "v2-generated",
   "duration": "5s",
-  "resolution": "480p",
-  "aspect_ratio": "1:1",
-  "model": "bytedance/seedance-2",
+  "format": "1:1 square",
+  "style": "1930s Fleischer Brothers rubber hose animation — hand-drawn ink outlines on vintage parchment, noodly boneless limbs, extreme squash and stretch, pie-cut eyes, oversized white gloves, warm sepia/ivory palette with lime green pops, watercolor grain, 24fps hand-drawn feel",
+  "method": "First frame + last frame, Seedance fills the motion. Characters described in prompt, not rigidly referenced — model has creative freedom.",
+  "audio_rule": "SFX only — cartoon whooshes, rubbery boings, spring sounds, mechanical whirring, one satisfying metallic click as badge completes. No music, no dialogue.",
+  "creative_brief": {
+    "concept": "The STUDIOLEE badge logo assembles itself — cartoon characters fly in from all directions with rubber hose physics and settle into their positions around the airplane",
+    "punchline": "The badge pulses with warm golden light as everything locks in — alive and spinning",
+    "tone": "Playful, chaotic, energetic — pure 1930s cartoon joy",
+    "setting": "White/parchment background, circular badge as the stage",
+    "key_detail": "Each character represents a STUDIOLEE service (SEO, chatbot, automation, etc.) — they are objects-with-personality, not humans",
+    "escalation": "Empty badge → chaos as characters arrive → satisfying lock into final composition",
+    "reference_videos": [],
+    "notes": "YouTube intro/outro. Must feel alive even when 'complete' — gentle spinning, wobbling, breathing."
+  },
+  "characters": {
+    "main": {
+      "name": "Airplane Pilot",
+      "role": "center of badge — stays in place while characters arrive",
+      "ref": "assets/starting-frame.png",
+      "notes": "1930s Cuphead-style cartoon airplane with smiling pilot, lime green body, SL branding"
+    },
+    "supporting": [
+      {
+        "name": "Windmill",
+        "service": "Website",
+        "notes": "Dutch windmill with spinning blades, walking legs, brown boots"
+      },
+      {
+        "name": "Gear",
+        "service": "Automation",
+        "notes": "Smiling gear/cog character, waving, smaller gears around it"
+      },
+      {
+        "name": "Disco Ball",
+        "service": "Social Media",
+        "notes": "Dancing disco ball with sunglasses and gold chain"
+      },
+      {
+        "name": "Washing Machine",
+        "service": "Reminders",
+        "ref": "https://www.studiolee.nl/assets/images/stickers/washing.webp",
+        "notes": "Walking washing machine with clothes flying out the top"
+      },
+      {
+        "name": "Helicopter",
+        "service": "Marketing",
+        "ref": "https://www.studiolee.nl/assets/images/stickers/helikopter.webp",
+        "notes": "Cheerful helicopter character buzzing around"
+      },
+      {
+        "name": "Globe",
+        "service": "SEO",
+        "notes": "Globe with magnifying glass, searching expression"
+      },
+      {
+        "name": "Hourglass",
+        "service": "Chatbot",
+        "notes": "Marching hourglass with SL branding"
+      },
+      {
+        "name": "Record Player",
+        "service": "Voice AI",
+        "notes": "Victrola/record player grooving with music notes"
+      },
+      {
+        "name": "Ferris Wheel",
+        "service": "Reviews",
+        "notes": "Dizzy ferris wheel character with spinning wheel"
+      }
+    ]
+  },
+  "assets": {
+    "_instructions": "Starting frame and ending frame are the key assets. Character reference sheet is a loose style guide only — model has creative freedom on how characters look and move.",
+    "props": {
+      "starting-frame": {
+        "description": "Empty circular badge — STUDIOLEE text arc top, LAAT HET DRAAIEN text arc bottom, airplane center, no characters",
+        "path": "assets/starting-frame.png",
+        "status": "approved"
+      },
+      "ending-frame": {
+        "description": "Complete badge2 logo with all characters in position around the airplane",
+        "path": "assets/ending-frame.webp",
+        "status": "approved"
+      },
+      "character-reference-sheet": {
+        "description": "3x3 grid of all 9 characters — used as loose style reference, NOT rigid template",
+        "path": "assets/character-reference-sheet.png",
+        "status": "approved"
+      }
+    }
+  },
   "scenes": [
     {
-      "id": "scene-01",
+      "id": 1,
       "name": "Badge Assembly",
-      "first_frame": "assets/starting-frame.png",
-      "last_frame": "assets/ending-frame.webp",
-      "reference_sheet": "assets/character-reference-sheet.png",
-      "status": "pending"
+      "duration": "5s",
+      "description": "Empty badge comes alive — characters burst in from all directions with rubber hose physics, chaos, then settle into final badge composition",
+      "first_frame": {
+        "prompt": "Empty circular vintage badge with STUDIOLEE text arched top, LAAT HET DRAAIEN bottom, 1930s cartoon airplane center, warm parchment colors",
+        "image_input": [
+          "assets/ending-frame.webp"
+        ],
+        "status": "approved",
+        "approved_image": "assets/starting-frame.png"
+      },
+      "last_frame": {
+        "prompt": "N/A — using existing badge2 logo",
+        "image_input": [],
+        "status": "approved",
+        "approved_image": "assets/ending-frame.webp"
+      },
+      "video": {
+        "seedance_prompt": "STYLE: 1930s Fleischer Brothers rubber hose animation. Hand-drawn ink outlines on vintage parchment paper. Noodly boneless limbs, no elbows or knees. Extreme squash and stretch. Oversized white gloves, pie-cut eyes, big toothy grins. Warm sepia and ivory with pops of lime green. Watercolor grain. Everything alive.\n\nA circular vintage badge logo with a cartoon airplane in the center starts empty and still. Then it comes to life:\n\nThe propeller spins faster and faster. Suddenly, wild cartoon characters — a bouncing windmill, a spinning gear, a dancing disco ball with sunglasses, a waddling washing machine with clothes flying out, a cheerful helicopter buzzing overhead, a wobbling globe with a magnifying glass, a marching hourglass, a grooving record player, and a dizzy ferris wheel — all come tumbling, bouncing, rolling, and flying into frame from every direction. Full rubber hose chaos. They crash into each other, bounce off the badge circle, overshoot and snap back like rubber bands. Squash flat on impact, stretch tall on jumps. Pure cartoon energy.\n\nThey gradually spiral into position around the circular badge, each finding their spot. As the last character locks in, the text STUDIOLEE arcs across the top and LAAT HET DRAAIEN arcs across the bottom. A warm golden pulse ripples through the badge. Everything gently spins in place. Complete and alive.\n\nSFX only — cartoon whooshes, rubbery boings, spring sounds, mechanical whirring, one satisfying metallic click as the badge completes.",
+        "reference_image_urls": [
+          "assets/starting-frame.png",
+          "https://www.studiolee.nl/assets/images/stickers/washing.webp",
+          "https://www.studiolee.nl/assets/images/stickers/helikopter.webp"
+        ],
+        "image_tail_url": "assets/ending-frame.webp",
+        "reference_video_urls": [],
+        "status": "v2-generated",
+        "generations": [
+          {
+            "version": "v1",
+            "task_id": "ab1a59aeda8bea29883227c94de34a8e",
+            "result": "Characters too static and literal — too many reference images made the model rigid",
+            "status": "rejected"
+          },
+          {
+            "version": "v2",
+            "task_id": "e8ab92f3c47f6775710d5ef7d9500e98",
+            "result": "Fewer refs, characters described in prompt, more creative freedom",
+            "status": "pending-review"
+          }
+        ],
+        "approved_video": null
+      }
     }
-  ]
+  ],
+  "workflow_checklist": {
+    "step_0_creative_brief": true,
+    "step_1_scene_plan_approved": true,
+    "step_2_assets_generated": true,
+    "step_3_assets_approved": true,
+    "step_4_all_first_frames_approved": true,
+    "step_5_all_last_frames_approved": true,
+    "step_6_storyboard_reviewed": true,
+    "step_7_all_videos_approved": false,
+    "step_8_assembly_plan_delivered": false
+  },
+  "storage": {
+    "repo": "StudioLee-cmd/seedance-studio",
+    "project_path": "projects/logo-badge-animation/",
+    "assets_path": "projects/logo-badge-animation/assets/",
+    "scenes_path": "projects/logo-badge-animation/scene-01/",
+    "approved_path": "projects/logo-badge-animation/approved/",
+    "videos_path": "projects/logo-badge-animation/videos/"
+  },
+  "rules": {
+    "1": "NEVER batch-generate. One frame at a time, sequential, wait for approval.",
+    "2": "NEVER skip the image step. Image first, then video. Two separate steps.",
+    "3": "Characters described in prompt — only pass 2-3 reference images max to avoid rigidity.",
+    "4": "Image prompts = frozen moments. No motion verbs.",
+    "5": "Upload to GitHub IMMEDIATELY after generation.",
+    "6": "Let the model be creative — references are style guides, not rigid blueprints.",
+    "7": "Document every prompt, every generation, and every approval in this file.",
+    "8": "This is a branding asset — quality over speed."
+  }
 }
